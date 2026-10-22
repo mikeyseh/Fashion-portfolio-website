@@ -1,0 +1,33 @@
+﻿@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Anton", sans-serif;
+  
+  --color-ela-black: #0a0a0a;
+  --color-ela-dark: #171717;
+  --color-ela-white: #f5f5f5;
+  --color-ela-red: #dc2626;
+  --color-ela-gray: #a3a3a3;
+
+  --animate-marquee: marquee 30s linear infinite;
+
+  @keyframes marquee {
+    from { transform: translateX(0%); }
+    to { transform: translateX(-50%); }
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-ela-black);
+  color: var(--color-ela-white);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
