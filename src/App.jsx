@@ -1,11 +1,11 @@
-﻿import { Routes, Route } from 'react-router-dom'
-import { CartProvider } from './context/CartContext'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import Home from './pages/Home'
-import About from './pages/About'
-import Portfolio from './pages/Portfolio'
-import Contact from './pages/Contact'
+﻿import { Routes, Route } from "react-router-dom";
+import { CartProvider } from "./context/CartContext";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
         <Footer />
       </div>
     </CartProvider>
-  )
+  );
 }
 
-export default App
+export default App;
